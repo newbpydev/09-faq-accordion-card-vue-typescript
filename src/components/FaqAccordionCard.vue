@@ -70,21 +70,21 @@ const faqs = ref([
       <!-- # faq__heading -->
       <h1 class="faq-card__heading">FAQ</h1>
       <!-- # faq__questions-container -->
-      <div
+      <details
         class="faq-card__questions-container"
         v-for="faq in faqs"
         :key="faq.id"
       >
-        <h2 class="faq-card__question">
+        <summary class="faq-card__question active">
           {{ faq.question }}
           <img
             class="faq-card__icon"
             :src="iconArrowDown"
             alt="click to reveal answer"
           />
-        </h2>
+        </summary>
         <p class="faq-card__answer">{{ faq.answer }}</p>
-      </div>
+      </details>
     </div>
   </article>
 </template>
@@ -93,7 +93,7 @@ const faqs = ref([
 <style scoped>
 .faq-card {
   position: relative;
-  max-width: 32.7rem;
+  width: 32.7rem;
   height: 53.5rem;
   padding: 13.2rem 2.4rem 4.8rem;
   background: #fff;
@@ -109,12 +109,12 @@ const faqs = ref([
 .faq-card__illus-shadow {
   z-index: -1;
   position: absolute;
-  bottom: -3rem;
+  bottom: -2.8rem;
   left: 0;
 }
 .faq-card__illus-container {
   position: absolute;
-  top: -10.5rem;
+  top: -10.6rem;
   left: 50%;
   transform: translate(-50%);
   width: 23.7rem;
@@ -128,12 +128,40 @@ const faqs = ref([
   color: var(--pri-blue-very-dark-desaturated);
 }
 
+/* details {
+  border-bottom: 1px solid var(--dividers-blue-light-grayish);
+  transition: all 2s ease;
+} */
 .faq-card__questions-container {
+  border-bottom: 1px solid var(--dividers-blue-light-grayish);
+  transition: all 2s ease;
 }
 .faq-card__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--neut-blue-very-dark-grayish);
+}
+
+details[open] > .faq-card__question {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--pri-blue-very-dark-desaturated);
 }
 .faq-card__icon {
+  width: 0.8rem;
+  transition: all 0.3s;
+  /* height: 0.4rem */
+}
+details[open] .faq-card__icon {
+  transform: rotate(180deg);
 }
 .faq-card__answer {
+  color: var(--neut-blue-dark-grayish);
+  line-height: 1.8;
+  letter-spacing: 0.02rem;
+  transition: all 3s;
 }
 </style>
