@@ -1,0 +1,107 @@
+/* *Reset CSS */
+@import './base.css';
+
+/* * Style Notes  */
+/*
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+# Front-end Style Guide
+  ## Layout
+    The designs were created to the following widths:
+    - Mobile: 375px
+    - Desktop: 1440px
+
+  ## Colors
+    ### Primary
+      #### Text
+        - Very dark desaturated blue: hsl(238, 29%, 16%)
+        - Soft red: hsl(14, 88%, 65%)
+
+      #### Gradient
+      Background gradient:
+        - Soft violet: hsl(273, 75%, 66%)
+        - Soft blue: hsl(240, 73%, 65%)
+
+    ### Neutral
+      #### Text
+        - Very dark grayish blue: hsl(237, 12%, 33%)
+        - Dark grayish blue: hsl(240, 6%, 50%)
+
+      #### Dividers
+        - Light grayish blue: hsl(240, 5%, 91%)
+
+  ## Typography
+    ### Body Copy
+      - Font size: 12px
+
+    ### Font
+      - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+      - Weights: 400, 700
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+/* * Variables  */
+:root {
+  /* text */
+  --pri-blue-very-dark-desaturated: hsl(238, 29%, 16%);
+  --pri-red-soft: hsl(14, 88%, 65%);
+
+  --neut-blue-very-dark-grayish: hsl(237, 12%, 33%);
+  --neut-blue-dark-grayish: hsl(240, 6%, 50%);
+
+  /* gradient */
+  --grad-violet: hsl(273, 75%, 66%);
+  --grad-blue: hsl(240, 73%, 65%);
+
+
+  /* dividers */
+  --dividers-blue-light-grayish: hsl(240, 5%, 91%);
+
+  --font-size: 1.2rem;
+  --font-family: 'Kumbh Sans';
+
+  --border-radius: 2.3rem;
+}
+
+/* * General Styles  */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--neut-grey-light);
+
+  display: flex;
+  /* place-items: center;
+  place-content: center; */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+
+  /* overflow: hidden; */
+  background-color: var(--neut-blue-very-dark);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
