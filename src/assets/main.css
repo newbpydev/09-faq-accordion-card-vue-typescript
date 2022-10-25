@@ -49,10 +49,13 @@
 :root {
   /* text */
   --pri-blue-very-dark-desaturated: hsl(238, 29%, 16%);
+  /* #1d1e35 */
   --pri-red-soft: hsl(14, 88%, 65%);
 
   --neut-blue-very-dark-grayish: hsl(237, 12%, 33%);
+  /* #4a4b5e */
   --neut-blue-dark-grayish: hsl(240, 6%, 50%);
+  /* #787887 */
 
   /* gradient */
   --grad-violet: hsl(273, 75%, 66%);
@@ -69,12 +72,6 @@
 }
 
 /* * General Styles  */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 html {
   font-size: 10px;
 }
@@ -94,7 +91,7 @@ body {
   position: relative;
 
   /* overflow: hidden; */
-  background-color: var(--neut-blue-very-dark);
+  background: linear-gradient(180deg, var(--grad-violet) 0%, var(--grad-blue) 100%);
 }
 
 .attribution {

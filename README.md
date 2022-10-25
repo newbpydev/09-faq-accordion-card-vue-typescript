@@ -31,7 +31,7 @@ you note with the selected rating our of 5 and a thank you message.
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/newbpydev/08-interactive-rating-component)
+- Solution URL: [GitHub](https://github.com/newbpydev/09-faq-accordion-card-vue-typescript)
 - Live Site URL: [Live Site](https://earnest-fox-cf8611.netlify.app/)
 
 ## My process

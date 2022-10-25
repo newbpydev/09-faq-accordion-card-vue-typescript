@@ -5,7 +5,9 @@ import FaqAccordionCard from "./components/FaqAccordionCard.vue";
 
 <!-- * TEMPLATE -->
 <template>
-  <FaqAccordionCard />
+  <main>
+    <FaqAccordionCard />
+  </main>
 </template>
 
 <!-- * STYLE -->
