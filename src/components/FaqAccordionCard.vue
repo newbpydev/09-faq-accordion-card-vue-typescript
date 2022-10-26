@@ -194,6 +194,7 @@ details[open] .faq-card__answer {
     width: 92rem;
     height: 50.9rem;
     padding: 6.5rem 9.5rem 8.3rem 47.5rem;
+    margin-left: 4.5rem;
   }
 
   .faq-card__illus-container {
