@@ -40,43 +40,46 @@ on a question to expand it and reveal the answer.
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Svelte + Vite + TypeScript
+- Vue + Vite + TypeScript
 
 ### What I learned
 
-I have learned on this project that we need to practice everyday and work hard
-to really understand how everything works, specially with the flexbox. Flexbox
-is very powerful and useful but we much mind the margin spaces that might
-influence the final spacing inside a flexbox. I must further study this topic.
+I have learned how to use the background-image on divs with roles of imgs to be
+able to control the image based on the media breakpoints. I have also learned
+how to use a pseudo element to create a shadow behind isometric images.
 
 ```css
-.interactive-rating {
-  max-width: 32.7rem;
-  height: 36rem;
-  padding: 2.4rem 2.4rem 3.2rem 2.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.faq::before {
+  content: "";
+  position: absolute;
+  top: 20.3rem;
+  left: -4.8rem;
+  height: 15rem;
+  width: 19.1rem;
+  z-index: 99;
 
-  background: radial-gradient(
-    98.96% 98.96% at 50% 0%,
-    #232a34 0%,
-    #181e27 100%
-  );
-  border-radius: var(--border-radius);
+  background-image: url("@/assets/images/illustration-box-desktop.svg");
+}
+.faq::after {
+  content: "";
+  position: absolute;
+  top: 18rem;
+  left: 0.3rem;
+  width: 9rem;
+  height: 0rem;
+  box-shadow: 0 12rem 3.5rem 0.5rem rgb(0 0 0);
 }
 ```
 
 ### Continued development
 
-For future development, I will continue to use flexbox to help me with the
-layout of my components. For the next project I would like to try new ways of
-using flexbox. I have also used the input with a button type, I will futher
-study this topic as well.
+For future development, I will continue to use pseudo elements to create the
+desired design layouts. I will take more time to analize the layouts and
+separate the layouts based on their elements.
 
 ### Useful resources
 
-- [MDN - input type="button"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button) - input elements of type button are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the click event).
+- [Medium - Absolute Centering in CSS](https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e) - input elements of type button are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the click event).
 - [MDN - Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This article explains all the fundamentals.
 
 ## Author
