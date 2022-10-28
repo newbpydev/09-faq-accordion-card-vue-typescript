@@ -63,8 +63,9 @@ const faqs = ref([
           <!-- # faq__questions-container -->
           <details
             class="faq-card__questions-container"
-            v-for="faq in faqs"
+            v-for="(faq, index) in faqs"
             :key="faq.id"
+            :open="index === 1"
           >
             <summary class="faq-card__question active">
               {{ faq.question }}
