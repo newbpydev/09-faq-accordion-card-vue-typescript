@@ -19,10 +19,9 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ## Overview
 
-This is my solution to the Interactive Rating Component challenge. It is an
-interactive rating component that will receive input from the user, the user
-must select a value from 1 to 5 and submit the form. The user receives a thank
-you note with the selected rating our of 5 and a thank you message.
+This is my solution to the Accordion Card Component challenge. It is a faq
+accordion card component where the questions are visible and the user can click
+on a question to expand it and reveal the answer.
 
 ### Screenshot
 
