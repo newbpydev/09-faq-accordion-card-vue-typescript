@@ -79,8 +79,8 @@ separate the layouts based on their elements.
 
 ### Useful resources
 
-- [Medium - Absolute Centering in CSS](https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e) - input elements of type button are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the click event).
-- [MDN - Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This article explains all the fundamentals.
+- [Medium - Absolute Centering in CSS](https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e) - If you want to center something horizontally in CSS you can do it just by, using the text-align: center; (when working with inline elements) or margin: 0 auto; (when working with block element). But when it comes to center something both horizontally and vertically the job can be a little tricky to achieve.
+- [MDN - ::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) - In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
 
 ## Author
 
