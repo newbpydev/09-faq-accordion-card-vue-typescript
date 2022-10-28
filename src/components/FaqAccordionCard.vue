@@ -230,10 +230,10 @@ details[open] .faq-card__answer {
     content: "";
     position: absolute;
     top: 18rem;
-    left: 0rem;
+    left: 0.3rem;
     width: 9rem;
-    height: 10rem;
-    box-shadow: 0 5rem 6rem -2rem rgba(0 0 0 / 1);
+    height: 0rem;
+    box-shadow: 0 12rem 3.5rem 0.5rem rgb(0 0 0);
   }
 
   .faq-card__illus-container {

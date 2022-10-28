@@ -31,7 +31,7 @@ on a question to expand it and reveal the answer.
 ### Links
 
 - Solution URL: [GitHub](https://github.com/newbpydev/09-faq-accordion-card-vue-typescript)
-- Live Site URL: [Live Site](https://earnest-fox-cf8611.netlify.app/)
+- Live Site URL: [Live Site](https://teal-sopapillas-2dd445.netlify.app/)
 
 ## My process
 
